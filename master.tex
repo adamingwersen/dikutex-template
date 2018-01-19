@@ -1,0 +1,56 @@
+\documentclass[a4paper]{article}
+
+%------------------------------------ PACKAGES -----------------------------------------------
+\usepackage{dikutemplate}
+\usepackage{minted}
+
+
+%------------------------------------ FRONTPAGE ----------------------------------------------
+\begin{document}
+	\AddToShipoutPicture*{\BackgroundPic}
+
+	\begin{titlepage}
+		\thispagestyle{empty}
+		\vspace*{5cm}
+		\begin{center}
+			\Huge \textbf{Put something here} \\
+      \LARGE \textbf{You know how it goes from here} \\
+		\end{center}
+		\vspace*{3.5cm}
+		\begin{flushleft}
+
+		\begin{table}[h!]
+			\begin{tabular}{lll}	
+      Some Name&\\ Some other namme\\
+			\end{tabular}
+		\end{table}
+			\vspace{3mm}
+			\vspace{3mm}
+			Datalogisk  Institut\\
+			Københavns Universitet\\
+			\vspace{3mm}
+			\today\\
+			%\vspace*{0.5cm}
+
+		\end{flushleft}
+	\end{titlepage}
+
+	\title{}
+	\author{}
+
+	\newpage
+\newpage
+
+%----------------------------------- DOCUMENT HEADERS ----------------------------------------
+\setAffiliation{Department of Computer Science \\ University of Copenhagen}
+\setShortAffiliation{DIKU}
+\setAssignment{Assignment Title}
+\setCourse{Course Title}
+\setAuthors{Authors}
+
+%----------------------------------- TEXT ----------------------------------------------------
+%%---- Note: Define Titles/Subtitles inside input-files
+
+\input{sections/somesection}
+
+\end{document}
